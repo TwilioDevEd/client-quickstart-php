@@ -1,32 +1,32 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebb7a0a8fe7118b90582b2929b79bc61",
+    "content-hash": "685149b3737ef5aca84391eadfbb065e",
     "packages": [
         {
             "name": "twilio/sdk",
-            "version": "5.38.0",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twilio/twilio-php.git",
-                "reference": "68491e33e5f98a96ca620ceac0fc75baecfa86e0"
+                "reference": "eb38f4c6f0d02456d4cbcd7cf88570df9750cda3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/68491e33e5f98a96ca620ceac0fc75baecfa86e0",
-                "reference": "68491e33e5f98a96ca620ceac0fc75baecfa86e0",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/eb38f4c6f0d02456d4cbcd7cf88570df9750cda3",
+                "reference": "eb38f4c6f0d02456d4cbcd7cf88570df9750cda3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
-                "apigen/apigen": "^4.1",
                 "guzzlehttp/guzzle": "^6.3",
-                "phpunit/phpunit": ">=4.5"
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
             },
             "suggest": {
                 "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
@@ -54,7 +54,7 @@
                 "sms",
                 "twilio"
             ],
-            "time": "2019-10-30T20:45:10+00:00"
+            "time": "2020-03-18T19:42:16+00:00"
         }
     ],
     "packages-dev": [],
