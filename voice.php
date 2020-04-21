@@ -1,15 +1,17 @@
 <?php
-include('./vendor/autoload.php');
-include('./config.php');
+require __DIR__ . '/vendor/autoload.php';
 
-use Twilio\Twiml;
+use Twilio\TwiML\VoiceResponse;
 
-$response = new Twiml;
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+$response = new VoiceResponse();
 
 // get the phone number from the page request parameters, if given
 if (isset($_REQUEST['To']) && strlen($_REQUEST['To']) > 0) {
     $number = htmlspecialchars($_REQUEST['To']);
-    $dial = $response->dial(array('callerId' => $TWILIO_CALLER_ID));
+    $dial = $response->dial('', ['callerId' => getenv('TWILIO_CALLER_ID')]);
     
     // wrap the phone number or client name in the appropriate TwiML verb
     // by checking if the number given has only digits and format symbols
