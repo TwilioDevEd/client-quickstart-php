@@ -19,11 +19,5 @@ jobs:
     - name: Install Dependencies
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
     - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        TWILIO_ACCOUNT_SID: ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-        TWILIO_CALLER_ID: +1XXXYYYZZZZ
-        TWILIO_TWIML_APP_SID: APXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-        API_KEY: SKXXXXXXXXXXXX
-        API_SECRET: XXXXXXXXXXXXXX
       run: |
-        vendor/bin/phpunit tests
+        bin/phpunit tests --stderr
