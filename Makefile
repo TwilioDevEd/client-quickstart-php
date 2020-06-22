@@ -1,3 +1,5 @@
+.PHONY: install serve
+
 install:
 	composer install
 
