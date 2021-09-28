@@ -60,6 +60,10 @@ After the above requirements have been met:
     cp .env.example .env
     ```
 
+    On production, to avoid showing errors, you should set the variable `DISPLAY_ERRORS` to
+   `0`. For development, it can be set to `1` on development. For more information, read
+   [this](https://phpdelusions.net/articles/error_reporting)
+
     See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
 
 1. Run the application
