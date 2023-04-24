@@ -2,7 +2,7 @@
     "name": "twilio-deved/client-quickstart-php",
     "require": {
         "php": "^7.2.5",
-        "twilio/sdk": "^6.1.0",
+        "twilio/sdk": "^7.3.0",
         "vlucas/phpdotenv": "^5.2"
     },
     "require-dev": {
